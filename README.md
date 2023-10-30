@@ -11,7 +11,7 @@ This repository contains scripts that facilitate the conversion and management o
 ## Files and Usage
 
 ```plaintext
-NSG-Converter/
+AzureNSG-Rule-Json2Yaml-Converter/
 │
 ├── nsg_json_to_yaml_converter.py      # Script for JSON to YAML conversion
 ├── nsg_rule_counter.py                # Script to count NSG rules
@@ -23,7 +23,7 @@ NSG-Converter/
 ├── output.yml                         # Output: Converted NSG rules in YAML
 ├── imports.tf                         # Output: Generated terraform import blocks
 │
-├── README.md                          # Documentation and usage guide
+├── README.md
 
 
 input.json
