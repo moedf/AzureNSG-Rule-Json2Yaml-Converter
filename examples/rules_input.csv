@@ -1,0 +1,4 @@
+﻿NSG_Name,Rule_Name,Resource_Group,Subscription_ID
+app-nsg,NGINX,rg-01,12345
+app-nsg,app-inbound,rg-01,12345
+app-nsg,app-outbound,rg-01,12345

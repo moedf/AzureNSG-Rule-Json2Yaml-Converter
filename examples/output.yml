@@ -1,0 +1,35 @@
+app-nsg:
+  rules:
+    app-inbound:
+      description: app-inbound
+      source_port_range: "*"
+      destination_port_range: 22
+      source_address_prefix: "*"
+      destination_address_prefix: 10.1.1.0/24
+      access: Allow
+      direction: Inbound
+      priority: 100
+      protocol: Tcp
+    app-outbound:
+      description: app-outbound
+      source_port_range: "*"
+      destination_port_range: 80
+      source_address_prefix: 10.1.1.4
+      destination_address_prefix: "*"
+      access: Allow
+      direction: Outbound
+      priority: 100
+      protocol: Tcp
+    NGINX:
+      description: NGINX
+      source_port_range: "*"
+      destination_port_ranges:
+        - 80
+        - 8080
+        - 443
+      source_address_prefix: "*"
+      destination_address_prefix: 10.1.1.4
+      access: Allow
+      direction: Inbound
+      priority: 110
+      protocol: "*"
