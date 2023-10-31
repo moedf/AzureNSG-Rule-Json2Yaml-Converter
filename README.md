@@ -1,6 +1,6 @@
 # NSG-Converter
 
-This repository contains scripts that facilitate the conversion and management of NSG (Network Security Group) rules for Azure. These scripts are particularly useful when working with NSG rules in Terraform. The tools in this repository allow you to count NSG rules, convert them from JSON to YAML format, and create terraform import blocks.
+This repository contains scripts that facilitate the conversion and management of NSG (Network Security Group) rules for Azure. These scripts are particularly useful when working with NSG rules in Terraform. The scripts in this repository allow you to count NSG rules, convert them from JSON to YAML format, and create terraform import blocks.
 
 ## Prerequisites
 - **Python:** These scripts are written in Python. Ensure that Python is installed in your environment.
